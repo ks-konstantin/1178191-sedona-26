@@ -61,22 +61,24 @@
 
     <section class="filters">
       <!--ФОРМА-->
-      <h2 class="visually-hidden">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h2>
+      <h3 class="visually-hidden">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h3>
       <form class="hotel search" action="#" method="POST">
         <p>
           <label>
             Дата заезда:
-            <input type="text"  value="24 апрeля 2017">
+            <input type="text"  value="24 апреля 2017" name="arrival date">
           </label>
           <!--<input type='datetime-local'>-->
-          <!--<img src="img/calendar2.svg" alt="calendar">-->
         </p>
         <p>
           <label>
-            <input type="number">
+            Дата выезда:
+            <input type="text" value="4 июля 2017" name="departure date">
           </label>
         </p>
+        <button class="button" type="submit">Найти</button>
       </form>
+      
     </section>
     <img src="img/map.png">
   </main>
