@@ -3,13 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
-  <header>
-  <nav>
-    <a><img src="img/logo.svg" width="50" height=""  alt="City of sedona"></a>
+  <body class="inner-page">
+  <header class="main-header">
+  <nav class="main-navigation">
+    <a><img src="img/logo.svg" width="60" height=""  alt="City of sedona"></a>
   
-    <ul>
+    <ul class="site-navigation">
         
       <li><a href="">Информация</a></li>
           <li><a href="">Фото и видуо</a></li>
@@ -19,13 +22,13 @@
     </ul>
   </nav>
   </header>
-  <main>
+  <main class="container">
     <img src="img/welcome.svg">
     <img src="img/polygon.svg">
     <h1 class=" visually-hidden">Sedona</h1>
     <section class="advantages">
-      <h2>Преиму́щества</h2>
-      <ul>
+      <h2 class="visually-hidden">Преиму́щества</h2>
+      <ul class="features-list">
         <li>
           <p>
             Седона - не большой городок в Аризоне, 
@@ -37,34 +40,39 @@
 
         </li>
       </ul>
-      <img src="img/Layer 10.jpg">
-      <ul>
+      <div class="img-Layer-10">
+      <img src="img/Layer 10.jpg"  width="" height="" aligen="right" >
+      </div>
+      <ul class="features-list">
         <li><img src="img/icon-1.svg"></li>
         <li><img src="img/icon-2.svg"></li>
         <li><img src="img/icon-3.svg"></li>
       </ul>
       <img src="img/Layer 5.jpg">
     </section>
-    <section class="Search hotels">
-      <h2>Выбор Гостиниц</h2>
+
+
+    <section class="Search-hotels">
+
+      <h2 class="visually-hidden">Выбор Гостиниц</h2>
       <h3>Заинтересовались?</h3>
       <p>
         Укажите предпологаемые даты поездки, <br>
         и мы покажем вам лучшее предложения гостиницы в седоне.
       </p>
       
-     
-    
-
     </section >
-    
+
+    <section class="h3-search">
+    <h3 class="search">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h3>
+    </section>
 
     <section class="filters">
       <!--ФОРМА-->
-      <h3 class="visually-hidden">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h3>
-      <form class="hotel search" action="#" method="POST">
+      
+      <form class="hotel-search" action="#" method="POST">
         <p>
-          <label>
+          <label >
             Дата заезда:
             <input type="text"  value="24 апреля 2017" name="arrival date">
           </label>
@@ -76,18 +84,18 @@
             <input type="text" value="4 июля 2017" name="departure date">
           </label>
         </p>
-        <button class="button" type="submit">Найти</button>
+        <button class="button" type="submit" style="width:457px;height:60px">Найти</button>
       </form>
       
     </section>
-    <img src="img/map.png">
+    <img src="img/map.png" width="100%">
   </main>
 
   <footer>
     <p>#VISITSEDONA</p>  
-    <div>
+    <div class="social">
       <!--<h3>соцсети</h3>-->
-      <ul>
+      <ul class="social-network">
         <li>
           <a href="#"><img src="img/t.svg" alt="Твиттер"></a>
           <a href="#"><img src="img/fb-icon.svg" alt="Фейсбук"></a>
