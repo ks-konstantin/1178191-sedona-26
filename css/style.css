@@ -1,0 +1,187 @@
+body {
+    margin: 0;
+    padding: 0;
+  
+    font-family: "PT Sans Narrow", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #000000;
+    text-transform: uppercase;
+    
+    background-color: #ffffff;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit
+}
+
+.button {
+    font: inherit;
+  
+    text-align: center;
+    color: #ffffff;
+    vertical-align: middle;
+    text-transform: uppercase;
+  
+    background-color: #81b3d2;
+    border: none;
+
+}
+
+.button:hover,
+.button:focus {
+    background-color: #669ec0;
+}
+
+.button:active {
+    background-color: #5496bd
+}
+
+
+.main-navigation {
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+  
+}
+
+.main-navigation a{
+    color: #000000
+}
+
+.main-navigation a:hover,
+.main-navigation a:focus {
+    color: #81b3d2;
+}
+
+.main-navigation a:active{
+    color: #6B6D6B;
+}
+/* Преимущества */
+.features-list {
+    list-style: none;
+}
+
+.features-list {
+    text-align: center;
+}
+  
+.features-list p {
+    font-size: 21px;
+    text-align: center;
+}
+
+.features-list p:nth-child(2) {
+    color:#6B6D6B;
+    font-size: 14px;
+    text-align: center;
+}
+
+.img-Layer-10 {
+    text-align: right;
+}
+
+.appointment-item input {
+    font: inherit;     
+    background-color: transparent;
+    border: 2px solid #000000;
+}
+
+/* */
+.Search-hotels{
+    text-align: center;
+}
+
+.Search-hotels p {
+    color:#6B6D6B;
+    font-size: 14px;
+
+}
+
+.Search-hotels h3 {
+    font-size: 30px;
+}
+
+/* Форма */
+.filters input {
+    font: inherit;
+  
+}
+
+.filters {
+    border: 2px solid #000000;
+    width: 575px;
+    height: 395px;
+    margin:0 auto;
+}
+
+
+
+.h3-search {
+    border: 2px solid #07447e;
+    width: 575px;
+    height: 86px;
+    margin:0 auto;
+}
+
+/* Подвал */
+
+footer {
+    background-color: #000000
+}
+
+div .social {
+    padding-left: 20px;
+    
+}
+
+.social a {
+    background: #81b3d2;
+    text-decoration: none;
+    font-size: 23px;
+    line-height: 20px;
+    color: #ffffff;
+    padding: 12px 7px;
+    margin-left: 6px;
+}
+
+/*
+a {
+    text-decoration: none;
+    color: inherit
+}
+
+.main-navigation {
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+    background-color: #ffffff
+}
+
+.site-navigation {
+    list-style: none;
+}
+
+.advantages p {
+    font-size: 21px;
+}
+
+.advantages p:nth-child(2) {
+    color:#6B6D6B;
+    font-size: 14px;
+}
+
+.Search-hotels h3 {
+    font-size: 30px;
+}
+
+.Search-hotels p {
+    color:#6B6D6B;
+    font-size: 14px;
+}
+*/
