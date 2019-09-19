@@ -1,25 +1,35 @@
 body {
     margin: 0;
     padding: 0;
-  
+    
     font-family: "PT Sans Narrow", Arial, sans-serif;
     font-size: 14px;
     line-height: 24px;
     font-weight: 700;
     color: #000000;
     text-transform: uppercase;
-    
-    background-color: #ffffff;
-    background-position: top center;
+    background-image: url("img/background-photo.jpg");
+    background-position: tpp center;
     background-repeat: no-repeat;
+}
+/* Главное фото*/
+
+
+div .welcome-svg {
+    width: 45%;
+    position:relative;
+    display:block;
+    margin:auto;
+    top: -1000px;
 }
 
 
+/*ссылки*/
 a {
     text-decoration: none;
     color: inherit
 }
-
+/* кнопки */
 .button {
     font: inherit;
   
@@ -42,7 +52,7 @@ a {
     background-color: #5496bd
 }
 
-
+/*Навигация*/
 .main-navigation {
     font-size: 14px;
     line-height: 20px;
@@ -92,7 +102,7 @@ a {
     border: 2px solid #000000;
 }
 
-/* */
+/*Выбор гостинец */
 .Search-hotels{
     text-align: center;
 }
@@ -114,25 +124,33 @@ a {
 }
 
 .filters {
-    border: 2px solid #000000;
+    border: 0px solid ;
     width: 575px;
     height: 395px;
     margin:0 auto;
+    position: relative;
+    top: 395px;
+    box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
+    background: #ffffff
 }
 
 
 
 .h3-search {
-    border: 2px solid #07447e;
+    border: 1px solid  #000000;
     width: 575px;
     height: 86px;
     margin:0 auto;
+    background-color: #766357;
+    text-align: center;
+    position: relative;
+    top: 395px;
 }
 
 /* Подвал */
 
 footer {
-    background-color: #000000
+    background-color: #ffffff
 }
 
 div .social {
@@ -150,38 +168,4 @@ div .social {
     margin-left: 6px;
 }
 
-/*
-a {
-    text-decoration: none;
-    color: inherit
-}
 
-.main-navigation {
-    font-size: 14px;
-    line-height: 20px;
-    color: #000000;
-    background-color: #ffffff
-}
-
-.site-navigation {
-    list-style: none;
-}
-
-.advantages p {
-    font-size: 21px;
-}
-
-.advantages p:nth-child(2) {
-    color:#6B6D6B;
-    font-size: 14px;
-}
-
-.Search-hotels h3 {
-    font-size: 30px;
-}
-
-.Search-hotels p {
-    color:#6B6D6B;
-    font-size: 14px;
-}
-*/
