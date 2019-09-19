@@ -12,9 +12,74 @@ body {
     background-position: tpp center;
     background-repeat: no-repeat;
 }
-/* Главное фото*/
+
+ul {
+    list-style: none;
+}
+
+/*----------Внутренняя страница---------- */
+.inner-page body{
+    color: #000000;
+  
+    background-color: #f9f6f3;
+    background-position: 0 0;
+    background-repeat: repeat;
+}
 
 
+.inner-navigation {
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+  
+}
+
+.inner-navigation a{
+    color: #000000;
+    
+}
+
+.site-navigation-current {
+    color: gray;
+    list-style: none;  
+}
+
+.inner-navigation a:hover,
+.inner-navigation a:focus {
+    color: #81b3d2;
+}
+
+.inner-navigation a:active{
+    color: #6B6D6B;
+}
+
+.button-brown {
+    font: inherit;
+  
+    text-align: center;
+    color: #ffffff;
+    vertical-align: middle;
+    text-transform: uppercase;
+  
+    background-color: #766357;;
+    border: none;
+}
+
+.button-brown:hover,
+.button-brown:focus {
+    background-color: #604e43;
+}
+
+.button-brown:active {
+    background-color: #503e33
+}
+
+
+
+/*---------------------------------*/
+
+
+/* Логотип*/
 div .welcome-svg {
     width: 45%;
     position:relative;
@@ -27,7 +92,7 @@ div .welcome-svg {
 /*ссылки*/
 a {
     text-decoration: none;
-    color: inherit
+    color: inherit;
 }
 /* кнопки */
 .button {
@@ -40,7 +105,6 @@ a {
   
     background-color: #81b3d2;
     border: none;
-
 }
 
 .button:hover,
