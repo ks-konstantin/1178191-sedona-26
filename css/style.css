@@ -1,3 +1,4 @@
+/*
 body {
     margin: 0;
     padding: 0;
@@ -12,12 +13,10 @@ body {
     background-position: tpp center;
     background-repeat: no-repeat;
 }
+*/
 
-ul {
-    list-style: none;
-}
 
-/*----------Внутренняя страница---------- */
+/*----------Внутренняя страница----------
 .inner-page body{
     color: #000000;
   
@@ -74,27 +73,30 @@ ul {
     background-color: #503e33
 }
 
+ul {
+    list-style: none;
+}
+
+---------------------------------*/
 
 
-/*---------------------------------*/
-
-
-/* Логотип*/
-div .welcome-svg {
+/* Логотип
+.welcome-svg {
     width: 45%;
     position:relative;
     display:block;
     margin:auto;
     top: -1000px;
 }
+*/
 
-
-/*ссылки*/
+/*ссылки
 a {
     text-decoration: none;
     color: inherit;
 }
-/* кнопки */
+*/
+/*кнопки
 .button {
     font: inherit;
   
@@ -115,8 +117,8 @@ a {
 .button:active {
     background-color: #5496bd
 }
-
-/*Навигация*/
+*/
+/*Навигация
 .main-navigation {
     font-size: 14px;
     line-height: 20px;
@@ -136,7 +138,8 @@ a {
 .main-navigation a:active{
     color: #6B6D6B;
 }
-/* Преимущества */
+*/
+/* Преимущества 
 .features-list {
     list-style: none;
 }
@@ -165,8 +168,8 @@ a {
     background-color: transparent;
     border: 2px solid #000000;
 }
-
-/*Выбор гостинец */
+*/
+/*Выбор гостинец 
 .Search-hotels{
     text-align: center;
 }
@@ -180,8 +183,8 @@ a {
 .Search-hotels h3 {
     font-size: 30px;
 }
-
-/* Форма */
+*/
+/* Форма 
 .filters input {
     font: inherit;
   
@@ -210,8 +213,8 @@ a {
     position: relative;
     top: 395px;
 }
-
-/* Подвал */
+*/
+/* Подвал 
 
 footer {
     background-color: #ffffff
@@ -231,5 +234,20 @@ div .social {
     padding: 12px 7px;
     margin-left: 6px;
 }
+*/
 
+/* ----- Сеточные стили ----- */
 
+html,
+body {
+  min-width: 1122px;
+  min-height: 1150px;
+}
+
+body {
+    /* Временно для сетки */
+    background-image: url('img/sedona-index.jpg');
+    background-size: 1200px auto;
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
