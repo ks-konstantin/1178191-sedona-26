@@ -1,4 +1,4 @@
-/*
+
 body {
     margin: 0;
     padding: 0;
@@ -9,14 +9,14 @@ body {
     font-weight: 700;
     color: #000000;
     text-transform: uppercase;
-    background-image: url("img/background-photo.jpg");
+    
     background-position: tpp center;
     background-repeat: no-repeat;
 }
-*/
 
 
-/*----------Внутренняя страница----------
+
+/*----------Внутренняя страница----------*/
 .inner-page body{
     color: #000000;
   
@@ -73,14 +73,15 @@ body {
     background-color: #503e33
 }
 
-ul {
-    list-style: none;
+.catalog-list {
+    list-style-type: none;
 }
 
----------------------------------*/
+
+/*---------------------------------*/
 
 
-/* Логотип
+/* Логотип*/
 .welcome-svg {
     width: 45%;
     position:relative;
@@ -88,15 +89,15 @@ ul {
     margin:auto;
     top: -1000px;
 }
-*/
 
-/*ссылки
+
+/*ссылки*/
 a {
     text-decoration: none;
     color: inherit;
 }
-*/
-/*кнопки
+
+/*кнопки*/
 .button {
     font: inherit;
   
@@ -117,8 +118,8 @@ a {
 .button:active {
     background-color: #5496bd
 }
-*/
-/*Навигация
+
+/*Навигация*/
 .main-navigation {
     font-size: 14px;
     line-height: 20px;
@@ -138,8 +139,8 @@ a {
 .main-navigation a:active{
     color: #6B6D6B;
 }
-*/
-/* Преимущества 
+
+/* Преимущества */
 .features-list {
     list-style: none;
 }
@@ -168,8 +169,8 @@ a {
     background-color: transparent;
     border: 2px solid #000000;
 }
-*/
-/*Выбор гостинец 
+
+/*Выбор гостинец */
 .Search-hotels{
     text-align: center;
 }
@@ -183,8 +184,8 @@ a {
 .Search-hotels h3 {
     font-size: 30px;
 }
-*/
-/* Форма 
+
+/* Форма */
 .filters input {
     font: inherit;
   
@@ -213,10 +214,10 @@ a {
     position: relative;
     top: 395px;
 }
-*/
-/* Подвал 
 
-footer {
+/* Подвал */
+
+.footer {
     background-color: #ffffff
 }
 
@@ -234,20 +235,92 @@ div .social {
     padding: 12px 7px;
     margin-left: 6px;
 }
-*/
 
-/* ----- Сеточные стили ----- */
+
+
+
+
+/* ----- Сеточные стили ----- 
 
 html,
 body {
-  min-width: 1122px;
-  min-height: 1150px;
+  min-width: 1200px;
+  min-height: 2575px;
 }
 
 body {
-    /* Временно для сетки */
-    background-image: url('img/sedona-index.jpg');
+    /* Временно для сетки 
+    background-image: url('../preview/sedona-index.jpg');
     background-size: 1200px auto;
     background-position: top center;
     background-repeat: no-repeat;
+    
+    
   }
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+    background-color: aqua;
+}
+
+.main-heder {
+    
+    /*временно для сетки
+    min-height: 56px;
+    background-color: #000;
+}
+
+.main-navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    /*временно для сетки
+    min-height: 71px;
+    background-color: transparent;
+}
+
+.main-header-logo {
+    order: 2;
+    width: 139px;
+    height: 71px;
+    /*временно для сетки
+    display: block;
+    background-color: #000;
+}
+
+.main-navifation-wrapper{
+    widows: 100%;
+    background-color: goldenrod;
+}
+
+.main-navifation-wrapper .container {
+    display: flex;
+    justify-content: space-between;
+    background-color:green;
+}
+
+.site-navigation {
+    width: 478px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    /*временно для сетки
+    min-height: 56px;
+    background-color: brown;
+}
+
+.site-navigation-2 {
+    width: 478px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    /*временно для сетки
+    min-height: 56px;
+    background-color: blueviolet;
+    
+}
+
+*/
