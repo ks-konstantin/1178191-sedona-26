@@ -324,3 +324,10 @@ body {
 }
 
 */
+
+
+.menu {
+    display: flex;
+    align-items: center;
+  }
+  
