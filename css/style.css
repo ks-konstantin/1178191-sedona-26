@@ -258,10 +258,7 @@ body {
 }
 
 
-.main-header{
-    /**/
-    min-height: 71px;
-}
+
 
 .main-navigation {
     display: flex;
@@ -270,36 +267,25 @@ body {
     /**/
     min-height: 56px;
     background-color: transparent; 
-
+    border: 3px solid #000000;
 }
 
-.main-header-logo {
+
+
+.logo.svg img {
     width: 139px;
     height: 71px;
     margin-top: 27px;
    
 }
 
-.main-navigation-wrapper {
-    width: 100%;
-    list-style: none;
-    /**/
-    min-height: transparent;
-}
 
-.main-navigation-wrapper .container{
-    display: flex;
-}
 
-.site-navigation {
-    width: 100%;
-    margin-bottom: 14px;
-    margin-top: 27px;
-    padding:0;
-    list-style: none;
-    /**/
+.site-navigation a{
+    
     min-height: 56px;
-   
+    border: 3px solid #000000;
+    display:block;
 }
 
 .backgraund-photo {
@@ -310,23 +296,26 @@ body {
 }
 
 .container {
+ width: 1200px;   
  margin: 0 auto;
  padding:0 10px;
  border: 3px solid green;
 }
 
-.welcome {
-    margin:0 auto;
-    padding: 0 10px;
+.welcome-svg img{
+   
     width: 458px;
     height: 352px;
-    margin-top: 62px;
+    display:block;
+    margin:auto;
 }
 
-.poligon {
+.polygon img{
     width: 1200px;
     height: 58px;
     margin-top: 22px;
+    display:block;
+    margin:auto;
 }
 
 .advantages-block {
@@ -365,7 +354,7 @@ body {
     color: #333333;
 }
 
-.advantages-big-block {
+.advantages-big-block  {
     margin: 0 auto;
     padding:0 10px;   
     width: 1200px;
@@ -374,35 +363,60 @@ body {
 }
 
 
+/**/
 
-
-.Search-hotels{
-    width: 568px;
-    height: 581px;
-}
-
-
-
-
-.main-footer{
-    margin-top: 78px;
-    width: 1200px;
-    height: 120px;
-   
-}
-
-.main-footer .container1 {
-    display: flex;
-    
-}
-
-.container1 {
-    height: 48px;
+.Search-hotels {
+    width: 434px;
+    height: 96px;
+    border: 3px solid rgb(36, 10, 10);
+      
     margin: 0 auto;
     padding:0 10px;
 }
 
-.footer-contact {
+.Search-hotels p{
+    font-size: 30px;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #000000;
+  
+}
+
+.Search-hotels p:last-child{
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    text-align: center;
+    color: #333333;
+}
+
+.filters{
+    width: 568px;
+    height: 481px;
+    border: 3px solid green;
+    margin: 0 auto;
+    padding:0 10px;
+}
+
+
+.footer{
+    width: 1200px;   
+    margin: 0 auto;
+    padding:0 10px;
+    border: 3px solid green;
+    display: flex;
+    height: 120px;
+   
+}
+
+
+
+
+
+.footer p {
     width: 136px;
     margin: 0;
     min-height: 16px;
@@ -410,13 +424,13 @@ body {
     border: 3px solid brown;
 }
 
-.footer-social {
+.social-network {
     width: 138px;
     min-height: 58px; 
     border: 3px solid brown;
 }
 
-.footer-copyright {
+.logo_HtmlAcademy {
     width: 188px;
     margin:0;
     min-height: 40px;
