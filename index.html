@@ -10,9 +10,10 @@
 
   <body>
    <!--  --
+  <img class="backgraund-photo" src="img/background-photo.jpg" width="100%" >
   <header>
   <nav class="main-navigation">
-    <a><img src="img/logo.svg" width="60" height=""  alt="City of sedona"></a>
+    <a class="logo.svg"><img src="img/logo.svg" width="60" height=""  alt="City of sedona"></a>
     <ul class="site-navigation">   
       <li><a href="">Информация</a></li>
           <li><a href="">Фото и видуо</a></li>
@@ -23,12 +24,14 @@
   </nav>
 
   </header>
- 
+
   <main class="container">
   <!--Главное фото--
-  <img src="img/background-photo.jpg" width="100%" >
-  <a class="welcome-svg"><img src="img/welcome.svg"  alt="City of sedona" ></a> 
-  <img src="img/polygon.png">
+  
+  
+ <a class="welcome-svg"><img src="img/welcome.svg"  alt="City of sedona" ></a> 
+  <div class="polygon"><img src="img/polygon.png" ></div>
+
   
 
     <h1 class=" visually-hidden">Sedona</h1>
@@ -112,7 +115,7 @@
     </div>
     <p>
       WEBSITE
-      <a><img src="img/logo_HtmlAcademy.svg" width="50" height="" alt="HTML Academy"></a>
+      <a class="logo_HtmlAcademy"><img src="img/logo_HtmlAcademy.svg" width="50" height="" alt="HTML Academy"></a>
     </p>
 
   </footer>
@@ -121,18 +124,20 @@
 
 
 <!---->
-<div class="backgraund-photo">
-<header class="main-header">
-  <nav class="main-navigation">
-    <div class="main-navigation-wrapper">
-        <ul class="site-navegation"></ul> <a class="main-header-logo"></a>
-    </div>
-  </nav>
-</header>
+<nav class="main-navigation">
+  <a class="logo.svg"><img src="img/logo.svg" width="60" height=""  alt="City of sedona"></a>
+  <ul class="site-navigation">
+  </ul>
+</nav>
 
-<div class="welcome"><a class="welcome-svg"><img src="img/welcome.svg"  alt="City of sedona" ></a></div> 
-<div class="polygon"><img src="img/polygon.png"></div>
-<div class="advantages-block">
+
+
+<main class="container">
+
+<a class="welcome-svg"><img src="img/welcome.svg"  alt="City of sedona" ></a>
+<div class="polygon"><img src="img/polygon.png" ></div>
+
+<section class="advantages-block">
     <ul class="features-list">
         <li>
           <p>
@@ -148,26 +153,57 @@
 </div>
 </div>
 
-<div class="advantages-big-block "></div>
 
+
+
+
+</main>
+<div class="advantages-big-block "></div>
+<h2 class="visually-hidden">Выбор Гостиниц</h2>
 <section class="Search-hotels">
 
+    
+    <p>Заинтересовались?</p>
+    <p>
+      Укажите предпологаемые даты поездки, <br>
+      и мы покажем вам лучшее предложения гостиницы в седоне.
+    </p>
+    
+  </section >
+
+  <section class="filters">
+      
+      
+      <form class="hotel-search" action="#" method="POST">
+        <p>
+          <label >
+            Дата заезда:
+            <input type="text"  value="24 апреля 2017" name="arrival date">
+          </label>
+          <input type='datetime-local'>
+        </p>
+        <p>
+          <label>
+            Дата выезда:
+            <input type="text" value="4 июля 2017" name="departure date">
+          </label>
+        </p>
+        <button class="button" type="submit" style="width:457px;height:60px">Найти</button>
+      </form>
+      
+    </section>
 
 
-
-
-</section>
-
-
-
-<footer class="main-footer">
-  <div class="container1">
-  <p class="footer-sontact"></p>
-  <div class="footer-social"></div>
-  <p class="footer-copyrigh"></p>
-</div>
+<footer class="footer">
+    <p>#VISITSEDONA</p>  
+    <div class="social">
+      <ul class="social-network"></ul>
+    </div>
+    <p>
+      WEBSITE
+      <a class="logo_HtmlAcademy"><img src="img/logo_HtmlAcademy.svg" width="50" height="" alt="HTML Academy"></a>
+    </p>
 </footer>
-
 
 
   </body>
