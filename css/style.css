@@ -9,7 +9,8 @@ body {
     font-weight: 700;
     color: #000000;
     text-transform: uppercase;
-    background-image: url(../img/background-photo.jpg);
+    background-image:  url(../img/polygon.png),
+    url(../img/background-photo.jpg);
     background-position: top center;
     background-repeat: no-repeat;
 }
@@ -19,7 +20,7 @@ body {
 /*----------Внутренняя страница----------*/
 .inner-page body{
     color: #000000;
-  
+    
     background-color: #f9f6f3;
     background-position: 0 0;
     background-repeat: repeat;
@@ -76,7 +77,41 @@ body {
 .catalog-list {
     list-style-type: none;
 }
+/*
+.contoiner-inner{
+    width: 1200px;
+    height: 540px;
+}
 
+.catalog-itm-image{
+    order: -1;
+}
+
+.catalog-item-inner{
+    display: flex;
+    background: #575757;
+}
+
+.catalog-item-inner .catalog-item-price{
+    display: flex;
+    flex-direction: reverse;
+    flex-direction: column;
+    align-self: flex-end;
+    
+}
+*/
+.catalog-item{
+    display: flex;
+}
+
+.catalog-itm-image{
+    display: block;
+    display: flex;
+}
+
+.catalog-item-price{
+    
+}
 
 /*---------------------------------*/
 
@@ -85,11 +120,11 @@ body {
 .logo-svg {
     width: 139px;
     height: 71px;
-    margin-top: 27px;
+    
     display: block;
-    
+    left: 50%;
     position: absolute;
-    
+    margin-left: -70px;
 }
 
 
@@ -132,7 +167,7 @@ a {
     background-color: #5496bd
 }
 
-/*Навигация*/
+/*-------------------------Навигация---------------------------*/
 .main-navigation {
     
     font-size: 14px;
@@ -276,6 +311,7 @@ nav ul {
     list-style-type: none;
     padding:0;
 }
+
 nav a{
     
     
@@ -283,7 +319,7 @@ nav a{
     text-decoration: none;
     text-align:center;
     display: block;
-    margin-top: 26px;
+    /*margin-top: 26px;*/
     border: 1px solid #766357;
     
     
@@ -295,8 +331,6 @@ nav a:nth-child(3) {
 
 }
 
-
-
 nav ul{
    display: flex; 
 
@@ -305,7 +339,7 @@ nav ul{
 
 
 
-/*-----------------------------*/
+/*-----------------------------
 .welcome-svg img{
    
     width: 458px;
@@ -315,19 +349,8 @@ nav ul{
     display:block;
     
 }
-
-.polygon {
-    widows: 1200px; 
-
-    margin-top: 22px;
-
-    
-    margin: auto;
-    
-    
- 
-}
-
+*/
+/*----------------Преиму́щества ---------------------*/
 .advantages {
     width: 1200px;
     height: 216px;
@@ -368,7 +391,7 @@ nav ul{
 
 
 
-/*-------------------------------*/
+/*-----------------Выбор Гостиниц-------------------*/
 
 .Search-hotels {
     width: 434px;
@@ -397,7 +420,7 @@ nav ul{
     text-align: center;
     color: #333333;
 }
-
+/*-------------Фрома----------*/
 .filters{
     width: 568px;
     height: 481px;
