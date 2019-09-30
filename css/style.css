@@ -102,15 +102,14 @@ body {
 */
 .catalog-item{
     display: flex;
+    flex-direction: row;
+    align-items: flex-start;
 }
+
+
 
 .catalog-itm-image{
-    display: block;
-    display: flex;
-}
-
-.catalog-item-price{
-    
+    align-self: center;
 }
 
 /*---------------------------------*/
