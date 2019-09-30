@@ -9,8 +9,7 @@ body {
     font-weight: 700;
     color: #000000;
     text-transform: uppercase;
-    background-image:  url(../img/polygon.png),
-    url(../img/background-photo.jpg);
+   
     background-position: top center;
     background-repeat: no-repeat;
 }
@@ -114,6 +113,12 @@ body {
 
 /*---------------------------------*/
 
+/*-----Главное фото-------*/
+.photo{
+    background-image:  url(../img/polygon.png),
+    url(../img/background-photo.jpg);
+}
+
 
 /* Логотип*/
 .logo-svg {
@@ -126,12 +131,13 @@ body {
     margin-left: -70px;
 }
 
+.photo{
+    display:flex;
+}
 
 .welcome-svg {
     width: 458px;
     height: 352px;
-    position:center;
-    display:block;
     margin:auto;  
     margin-top: 62px;
 }
