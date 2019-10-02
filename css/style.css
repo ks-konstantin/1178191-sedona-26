@@ -133,6 +133,7 @@ body {
 
 .photo{
     display:flex;
+    background-repeat:no-repeat;
 }
 
 .welcome-svg {
@@ -148,6 +149,23 @@ body {
 a {
     text-decoration: none;
     color: inherit;
+}
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
+.visually-hidden:not(:focus):not(:active){
+    position:absolute;
+    width:1px;
+    height: 1px;
+    border:0;
+    padding:0;
+    white-space: nowrap;
+    clip-path:inset(100%);
+    clip:rect(0 0 0 0);
+    overflow:hidden;
 }
 
 /*кнопки*/
@@ -311,7 +329,30 @@ body {
     background-repeat: no-repeat;  
 } */
 
-/*--------------nav-------------------*/
+
+
+.site-navigation {
+    display:flex;
+    flex-wrap:wrap;
+    width:1200px;
+    list-style-type: none;
+}
+
+.site-navigation a{
+    display: inline-block;
+    padding:22px 0 22px;
+    text-align:center;
+    width: 239px;
+    text-decoration: none;
+    
+}
+
+nav a:nth-child(3) {
+    width:244px;
+    padding-top:22px;
+}
+
+/*--------------nav-------------------
 nav ul {
     list-style-type: none;
     padding:0;
@@ -324,7 +365,7 @@ nav a{
     text-decoration: none;
     text-align:center;
     display: block;
-    /*margin-top: 26px;*/
+    
     border: 1px solid #766357;
     
     
@@ -338,8 +379,9 @@ nav a:nth-child(3) {
 
 nav ul{
    display: flex; 
+   flex-wrap:wrap;
 
-}
+}*/
 /*------------------------------------
 
 
