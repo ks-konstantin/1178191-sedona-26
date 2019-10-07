@@ -134,13 +134,18 @@ body {
 .photo{
     display:flex;
     background-repeat:no-repeat;
+    background-position: 100% 70%;
+    
+    width: 1200px;
+    height: 800px;
+    
 }
 
 .welcome-svg {
     width: 458px;
     height: 352px;
     margin:auto;  
-    margin-top: 62px;
+    margin-top: 162px;
 }
 
 
@@ -213,20 +218,21 @@ img{
 }
 
 /* Преимущества */
-.features-list {
+.featur {
+    
     list-style: none;
 }
 
-.features-list {
+.featur {
     text-align: center;
 }
   
-.features-list p {
+.featur p {
     font-size: 21px;
     text-align: center;
 }
 
-.features-list p:nth-child(2) {
+.featur p:nth-child(2) {
     color:#6B6D6B;
     font-size: 14px;
     text-align: center;
@@ -241,6 +247,13 @@ img{
     font: inherit;     
     background-color: transparent;
     border: 2px solid #000000;
+}
+
+.img-Layer-10 {
+    width: 800px;
+    height: 256px;
+    margin-left: auto;
+    margin-right: 0;
 }
 
 /*Выбор гостинец */
@@ -258,37 +271,11 @@ img{
     font-size: 30px;
 }
 
-/* Форма */
-.filters input {
-    font: inherit;
-  
-}
-
-.filters {
-    border: 0px solid ;
-    width: 575px;
-    height: 395px;
-    margin:0 auto;
-    position: relative;
-    top: 395px;
-    box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
-    background: #ffffff
-}
 
 
 
-.h3-search {
-    border: 1px solid  #000000;
-    width: 575px;
-    height: 86px;
-    margin:0 auto;
-    background-color: #766357;
-    text-align: center;
-    position: relative;
-    top: 395px;
-}
 
-/* Подвал  */
+/* Подвал  
 
 .footer {
     background-color: #ffffff
@@ -311,27 +298,12 @@ div .social {
 
 
 
+*/
 
+ /*----- Сеточные стили ----- */
 
-/* ----- Сеточные стили ----- 
-
-html,
-body {
-  min-width: 1200px;
-  min-height: 2575px;
-}
-
-body {
-    /* Временно для сетки 
-    background-image: url('../preview/sedona-index.jpg');
-    background-position: top center;
-    background-size: 1200px auto;
-    background-repeat: no-repeat;  
-} */
-
-
-
-.site-navigation {
+/*------------Навигация------------*/
+ .site-navigation {
     display:flex;
     flex-wrap:wrap;
     width:1200px;
@@ -347,66 +319,31 @@ body {
     
 }
 
+.site-navigation li:first-child{
+    display: inline-block;
+    padding:22px 0 22px;
+    text-align:center;
+    width: 239px;
+    text-decoration: none;
+    color: #6B6D6B;
+}
+
 nav a:nth-child(3) {
     width:244px;
     padding-top:22px;
 }
-
-/*--------------nav-------------------
-nav ul {
-    list-style-type: none;
-    padding:0;
-}
-
-nav a{
-    
-    
-    width: 239px;
-    text-decoration: none;
-    text-align:center;
-    display: block;
-    
-    border: 1px solid #766357;
-    
-    
-}
-
-nav a:nth-child(3) {
-    width:244px;
-    border: 1px solid #9e4208;
-
-}
-
-nav ul{
-   display: flex; 
-   flex-wrap:wrap;
-
-}*/
-/*------------------------------------
-
-
-
-/*-----------------------------
-.welcome-svg img{
-   
-    width: 458px;
-    height: 352px;
-    overflow: auto;
-    margin: auto;
-    display:block;
-    
-}
-*/
+ 
 /*----------------Преиму́щества ---------------------*/
-.advantages {
+.featur {
     width: 1200px;
     height: 216px;
-    margin-top: 80px;
-    border: 3px solid yellow;
+    position: absolute;
+    transform:translatey(-223px);
+    background-color: white;
 }
 
-.features-list{
-    width: 440px;
+.featur p{
+  width: 500px;
   height: 48px;
   font-family: PTSans;
   font-size: 21px;
@@ -421,8 +358,8 @@ nav ul{
   page-break-after: auto;
 }
 
-.features-list p:last-child {
-    width: 489px;
+.featur p:last-child {
+    width: 600px;
     height: 13px;
     font-family: PTSans;
     font-size: 14px;
@@ -433,27 +370,284 @@ nav ul{
     letter-spacing: normal;
     text-align: center;
     color: #333333;
+    margin: 0 auto;
+    padding:0 10px;
+    margin-top: 38px;
+}
+
+.features-list {
+    
+    list-style-type: none;
+}
+
+.box{
+    display: flex;
+   
+}
+.box-2{
+    width: 400px;
+    height: 256px;
+    background-color: #81b3d2;
+}
+.box1{
+   
+    width: 280px;
+    height: 146px;
+    
+
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    list-style: none;
+    margin:46px 0px 64px ;
+    
 }
 
 
 
+.box1 h2{
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.box1 p{
+    font-family: PTSans;
+    font-size: 14px;
+    text-align: center;
+}
+
+/*-------------------------*/
+
+.box-1{
+    display: flex;
+}
+
+.box2  {
+  width: 400px;
+  height: 256px;
+  background-color: #81b3d2;
+}
+
+
+
+.dox3{
+    
+    width: 303px;
+    height: 142px;
+    font-family: PTSans;
+    
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    margin: 49px 0px 65px  ;
+    
+    list-style: none;
+}
+
+.dox3 h2{
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.dox3 p{
+    font-family: PTSans;
+    font-size: 14px;
+    text-align: center;
+    color: #ffffff;
+}
+
+
+
+.features-container{
+    display:flex;
+}
+
+
+
+
+.features-container1 li{
+    width: 252px;
+    height: 84px;
+    font-family: PTSans;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: #333333;
+    list-style: none;
+    
+}
+
+
+
+.features-container1 h2{
+    font-size: 21px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.features-food{
+    width: 284px;
+    height: 79px;
+    font-family: PTSans;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: #333333;
+    list-style: none;
+}
+
+.features-food h2{
+    font-size: 21px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.features-souvenir{
+    width: 273px;
+    height: 80px;
+    font-family: PTSans;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: #333333;
+    list-style: none;
+}
+
+.features-souvenir h2{
+    font-size: 21px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.features-container ul{
+    margin:60px 0px 85px 73px; 
+}
+
+.square{
+    display: flex;
+}
+
+.square2{
+    width: 400px;
+    height: 256px;
+    border: 1px solid black;
+}
+
+
+.squarea3{
+    width: 208px;
+    height: 143px;
+    font-family: PTSans;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: #333333;
+    list-style: none;
+    margin:auto;
+   
+}
+
+.squarea3>:nth-child(1){
+    font-size: 21px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.road{
+    display:flex;
+}
+
+.road2{
+    width: 262px;
+    height: 142px;
+    font-family: PTSans;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: #333333;
+    list-style: none;
+    margin: auto;
+}
+
+.road2 h2{
+    font-size: 21px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.tourist{
+    width: 246px;
+    height: 142px;
+    font-family: PTSans;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: #333333;
+    list-style: none;
+    margin: auto;
+}
+
+.tourist h2{
+    font-size: 21px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.square4{
+    display:flex;
+}
 
 /*-----------------Выбор Гостиниц-------------------*/
 
 .Search-hotels {
     width: 434px;
     height: 96px;
-    border: 3px solid rgb(36, 10, 10);
-      
-    margin: 0 auto;
-    padding:0 10px;
+    
+    text-align: center;
+    margin: 57px 383px 52px 383px;   
+   
 }
+
+
 
 .Search-hotels p{
     font-size: 30px;
   font-weight: bold;
   line-height: 1.2;
   color: #000000;
+  
   
 }
 
@@ -467,26 +661,71 @@ nav ul{
     text-align: center;
     color: #333333;
 }
+
+/*-----------------------------------------------------------------*/
+
+
+.f-search {
+    border: 1px solid  #000000;
+    width: 568px;
+    height: 86px;
+    margin:0 auto;
+    background-color: #766357;
+    
+}
+
+.f-search h3{
+   
+    font-family: PTSans;
+    font-size: 21px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.24;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    margin: 30px 0px 30px;
+
+}
+
 /*-------------Фрома----------*/
+
+.filters input {
+    font: inherit;
+  
+}
+
+.filters {
+    border: 0px solid ;
+    width: 568px;
+    height: 395px;
+    margin:0 auto;
+    position: relative;
+    
+    box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
+    background: #ffffff
+}
+
+
 .filters{
     width: 568px;
     height: 481px;
-    border: 3px solid green;
+    
     margin: 0 auto;
     padding:0 10px;
 }
 
-/*------------------------------------------*/
+/*------------------------------------------
 .footer{
     width: 1200px;   
     margin: 0 auto;
     padding:0 10px;
     border: 3px solid green;
-    display: flex;
+    
     height: 120px;
    
 }
-
 
 
 
@@ -499,10 +738,12 @@ nav ul{
     border: 3px solid brown;
 }
 
-.social-network {
-    width: 138px;
-    min-height: 58px; 
-    border: 3px solid brown;
+
+.social-bottom {
+    width: 46px;
+    height: 48px;
+    
+    
 }
 
 .logo_HtmlAcademy {
@@ -512,4 +753,54 @@ nav ul{
     margin-left: 102px;
     border: 3px solid brown;
 }
+*/
 
+.footer{
+    width: 1200px;   
+    margin: 0 auto;
+    padding:0 10px;
+    border: 3px solid green;
+    
+    height: 120px;
+   
+}
+
+.share {
+    width: 270px;
+    margin: 0 auto;
+    margin-top: 120px;
+    padding: 10px;
+    padding-left: 20px;
+  
+    
+  }
+  
+  
+  
+  .social {
+    display: inline-block;
+    width: 46px;
+    height: 48px;
+    margin-right: 10px;
+  
+    vertical-align: middle;
+  }
+  
+  .social-yout img{
+    
+    background-position: 0 0;
+    background: url("../img/youtube.svg") no-repeat;
+  }
+  
+  .social-fb {
+    
+    background-position: -40px 0;
+    background: url("../img/fb-icon.svg") no-repeat;
+  }
+  
+  .social-tw {
+   
+    background-position: -80px 0;
+    background: url("../img/t.svg") no-repeat;
+  }
+  
