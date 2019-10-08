@@ -325,7 +325,7 @@ div .social {
     text-align:center;
     width: 239px;
     text-decoration: none;
-    color: #6B6D6B;
+    color: #766357;
 }
 
 nav a:nth-child(3) {
@@ -716,7 +716,7 @@ nav a:nth-child(3) {
     padding:0 10px;
 }
 
-/*------------------------------------------
+/*---------------footer-------------*/
 .footer{
     width: 1200px;   
     margin: 0 auto;
@@ -753,54 +753,6 @@ nav a:nth-child(3) {
     margin-left: 102px;
     border: 3px solid brown;
 }
-*/
 
-.footer{
-    width: 1200px;   
-    margin: 0 auto;
-    padding:0 10px;
-    border: 3px solid green;
-    
-    height: 120px;
-   
-}
 
-.share {
-    width: 270px;
-    margin: 0 auto;
-    margin-top: 120px;
-    padding: 10px;
-    padding-left: 20px;
-  
-    
-  }
-  
-  
-  /*
-  .social {
-    display: inline-block;
-    width: 46px;
-    height: 48px;
-    margin-right: 10px;
-  
-    vertical-align: middle;
-  }
-  */
-  .social-yout img{
-    
-    background-position: 0 0;
-    
-  }
-  
-  .social-fb {
-    
-    background-position: -40px 0;
-    background: url("../img/fb-icon.svg") no-repeat;
-  }
-  
-  .social-tw {
-   
-    background-position: -80px 0;
-    background: url("../img/t.svg") no-repeat;
-  }
-  
+
