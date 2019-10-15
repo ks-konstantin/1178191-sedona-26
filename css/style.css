@@ -3,7 +3,7 @@ body {
     width: 1200px;   
     margin: 0 auto;
     padding:0 10px;
-    font-family: "PT Sans Narrow", Arial, sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 14px;
     line-height: 24px;
     font-weight: 700;
@@ -114,21 +114,65 @@ body {
     margin-left: 30px;
 }
 
+.catalog-price span{ 
+    position: relative; 
+    bottom:10px;  
+    font-family: PT Sans;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #333333;
+    
+}
+
+
+
+.catalog-price span:last-of-type{
+    position: relative;
+    left: 40px;
+    
+}    
+
+.two span:last-of-type{
+    position: relative;
+    left: 70px;
+   
+}
+
+.three span:last-of-type{
+    position: relative;
+    left: 20px;
+   
+}
+
+
 .stars{
     background-image: url("../img/inner/star.svg");
     background-repeat:repeat;
     width: 70px;
-    height: 18px;
-    margin-bottom:47px;
-    
+    min-height: 18px;
+    margin-bottom:47px;    
 }
 
-.eight{
-    width:55px
+.stars-1{
+    position: relative;
+    left: 20px;
 }
 
-.nine{
+.stars-2{
+    width:55px;
+    position: relative;
+    left: 40px;
+}
+
+.stars-3{
     width:35px;
+    position: relative;
+    left: 60px;
     
 }
 
@@ -151,7 +195,7 @@ body {
 
 .item-description p:last-child{
     width: 77px;
-    height: 12px;
+    min-height: 12px;
     font-family: PT Sans;
     font-size: 14px;
     font-weight: normal;
@@ -165,13 +209,13 @@ body {
 
 .rating p:nth-child(2){
     width: 110px;
-    height: 27px;
+    min-height: 27px;
     background-color:#f2f2f2;
 }
 
 .rating b{
     width: 81px;
-    height: 16px;
+    min-height: 16px;
     font-family: PTSans;
     font-size: 14px;
     font-weight: normal;
@@ -227,11 +271,25 @@ body {
 /*-----Главное фото-------*/
 
 .promo{
+    position: relative;
     background: url(../img/background-photo.jpg);
     background-size:cover;
     min-height: 500px;
     
 }
+
+.promo::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 1200px;
+    min-height: 57px;
+    background-image: url(../img/polygon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 
 .photo-polygon{
     transform: translatey(90px);
@@ -242,19 +300,20 @@ body {
 /* Логотип*/
 .logo-svg {
     width: 139px;
-    height: 71px;
+    min-height: 71px;
     
     display: block;
     left: 50%;
     position: absolute;
     margin-left: -50px;
+    z-index: 1;
 }
 
 
 
 .welcome-svg {
     width: 458px;
-    height: 352px;
+    min-height: 352px;
     margin:auto;  
     transform: translatey(62px);
 }
@@ -275,7 +334,7 @@ img{
 .visually-hidden:not(:focus):not(:active){
     position:absolute;
     width:1px;
-    height: 1px;
+    min-height: 1px;
     border:0;
     padding:0;
     white-space: nowrap;
@@ -307,6 +366,8 @@ img{
 }
 
 /*-------------------------Навигация---------------------------*/
+
+
 .main-navigation {
     
     font-size: 14px;
@@ -328,92 +389,6 @@ img{
     color: #6B6D6B;
 }
 
-/* Преимущества */
-.featur {
-    
-    list-style: none;
-}
-
-.featur {
-    text-align: center;
-}
-  
-.featur p {
-    font-size: 21px;
-    text-align: center;
-}
-
-.featur p:nth-child(2) {
-    color:#6B6D6B;
-    font-size: 14px;
-    text-align: center;
-}
-
-.img-Layer-10 {
-    text-align: right;
-}
-
-
-.appointment-item input {
-    font: inherit;     
-    background-color: transparent;
-    border: 2px solid #000000;
-}
-
-.img-Layer-10 {
-    width: 800px;
-    height: 256px;
-    margin-left: auto;
-    margin-right: 0;
-}
-
-/*Выбор гостинец */
-.search-hotels{
-    text-align: center;
-}
-
-.search-hotels p {
-    color:#6B6D6B;
-    font-size: 14px;
-
-}
-
-.search-hotels h3 {
-    font-size: 30px;
-}
-
-
-
-
-
-/* Подвал  
-
-.footer {
-    background-color: #ffffff
-}
-
-div .social {
-    padding-left: 20px;
-    
-}
-
-.social a {
-    background: #81b3d2;
-    text-decoration: none;
-    font-size: 23px;
-    line-height: 20px;
-    color: #ffffff;
-    padding: 12px 7px;
-    margin-left: 6px;
-}
-
-
-
-*/
-
- /*----- Сеточные стили ----- */
-
-/*------------Навигация------------*/
  .site-navigation {
     display:flex;
     flex-wrap:wrap;
@@ -440,20 +415,37 @@ div .social {
     padding-left: 122px;
 }
 
-/*
-nav a:nth-child(3) {
-    width:244px;
-    padding-top:22px;
-}
-*/ 
+
 /*----------------Преиму́щества ---------------------*/
-.featur {
-    padding: 50px 0;
+
+.features p {
+    font-size: 21px;
+    text-align: center;
 }
 
-.featur p{
+.features p:nth-child(2) {
+    color:#6B6D6B;
+    font-size: 14px;
+    text-align: center;
+}
+
+
+.appointment-item input {
+    font: inherit;     
+    background-color: transparent;
+}
+
+
+.features {
+    padding: 50px 0;
+    list-style: none;
+    text-align: center;
+    
+}
+
+.features p{
   width: 500px;
-  height: 48px;
+  min-height: 48px;
   font-family: PTSans;
   font-size: 21px;
   font-weight: bold;
@@ -467,9 +459,9 @@ nav a:nth-child(3) {
   page-break-after: auto;
 }
 
-.featur p:last-child {
+.features p:last-child {
     width: 600px;
-    height: 13px;
+    min-height: 13px;
     font-family: PTSans;
     font-size: 14px;
     font-weight: normal;
@@ -491,24 +483,24 @@ nav a:nth-child(3) {
 
 
 
-.box{
+.advantages-item{
     display: flex;
 
 }
 
 
 
-.box-2{
+.advantages-container{
     
     width: 400px;
-    height: 256px;
+    min-height: 256px;
     background-color: #81b3d2;
     
 }
 /**/
-.box-3{
+.advantages-item-text{
     width: 280px;
-    height: 146px;
+    min-height: 146px;
     font-family: PT Sans;
     font-size: 14px;
     font-weight: normal;
@@ -522,12 +514,12 @@ nav a:nth-child(3) {
     
 }
 
-.box-3 h2{
+.advantages-item-text h2{
     font-size: 21px;
     font-weight: bold;
 }
 
-.box-3 p{
+.advantages-item-text p{
     font-family: PT Sans;
     font-size: 14px;
     text-align: center;
@@ -535,22 +527,22 @@ nav a:nth-child(3) {
 
 /*-------------------------*/
 
-.box-1{
+.advantages-description{
     display: flex;
 }
 
-.box2  {
+.advantages-container  {
   width: 400px;
-  height: 256px;
+  min-height: 256px;
   background-color: #81b3d2;
 }
 
 
 /**/
-.dox3{
+.advantages-description-text{
     
     width: 303px;
-    height: 142px;
+    min-height: 142px;
     font-family: PT Sans;
     
     font-weight: normal;
@@ -563,12 +555,12 @@ nav a:nth-child(3) {
     padding: 49px 49px 65px 49px;
 }
 
-.dox3 h2{
+.advantages-description-text h2{
     font-size: 21px;
     font-weight: bold;
 }
 
-.dox3 p{
+.advantages-description-text p{
     font-family: PT Sans;
     font-size: 14px;
     text-align: center;
@@ -577,93 +569,53 @@ nav a:nth-child(3) {
 
 
 
-.features-container{
-    display:flex;
+.features-list{
+    display: flex;
+    margin:37px 0px 37px;
 }
 
 
 
-
-.features-container1 li{
-    width: 252px;
-    height: 84px;
-    font-family: PT Sans;
-    font-size: 14px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-align: center;
-    color: #333333;
-    list-style: none;
-    
-}
-
-
-
-.features-container1 h2{
-    font-size: 21px;
-    font-weight: bold;
-    color: #000000;
-}
-
-.features-food{
-    width: 284px;
-    height: 79px;
-    font-family: PT Sans;
-    font-size: 14px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-align: center;
-    color: #333333;
-    list-style: none;
-}
-
-.features-food h2{
-    font-size: 21px;
-    font-weight: bold;
-    color: #000000;
-}
-
-.features-souvenir{
-    width: 273px;
-    height: 80px;
-    font-family: PT Sans;
-    font-size: 14px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-align: center;
-    color: #333333;
-    list-style: none;
-}
-
-.features-souvenir h2{
-    font-size: 21px;
-    font-weight: bold;
-    color: #000000;
-}
-
-.features-container ul{
-    margin:60px 0px 85px 73px; 
-}
-
-.square{
+.features-item-text {
     width: 400px;
-    height: 256px;
-    border: 1px solid black;
+    min-height: 256px;  
+    
+    text-align: center;
+}
+
+.features-text-2{
+    font-family: PT Sans;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    
+    color: #333333;
+}
+
+
+.features-text{
+    font-size: 21px;
+    font-weight: bold;
+    color: #000000;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 
 
 
-.squarea3{
+.reason-container{
+    width: 400px;
+    min-height: 256px;
+}
+
+
+
+
+.reason-1{
     width: 208px;
     height: 143px;
     font-family: PT Sans;
@@ -680,7 +632,7 @@ nav a:nth-child(3) {
    
 }
 
-.squarea3>:nth-child(1){
+.reason-1>:nth-child(1){
     font-size: 21px;
     font-weight: bold;
     color: #000000;
@@ -688,7 +640,7 @@ nav a:nth-child(3) {
 
 
 
-.road2{
+.reason-2{
     width: 262px;
     height: 142px;
     font-family: PT Sans;
@@ -704,13 +656,13 @@ nav a:nth-child(3) {
     margin: auto;
 }
 
-.road2 h2{
+.reason-2 h2{
     font-size: 21px;
     font-weight: bold;
     color: #000000;
 }
 
-.tourist{
+.reason-3{
     width: 246px;
     height: 142px;
     font-family: PT Sans;
@@ -726,39 +678,32 @@ nav a:nth-child(3) {
     margin: auto;
 }
 
-.tourist h2{
+.reason-3 h2{
     font-size: 21px;
     font-weight: bold;
     color: #000000;
 }
 
-.square4{
+.reason{
     display:flex;
 }
 
 /*-----------------Выбор Гостиниц-------------------*/
 
-.hotels-info{
-    width: 434px;
-    height: 96px;
-    
-    text-align: center;
-    margin: 57px 383px 52px 383px;   
-   
-}
 
 
-
-.hotels-info p{
+.search-hotels> h3{
     font-size: 30px;
-  font-weight: bold;
-  line-height: 1.2;
-  color: #000000;
-  
-  
+    font-weight: bold;
+    line-height: 1.2;
+    color: #000000;
+    text-align: center;
+    margin-top:57px;
 }
 
-.hotels-info p:last-child{
+.search-hotels> p{
+
+    font-family: PT Sans;
     font-size: 14px;
     font-weight: normal;
     font-style: normal;
@@ -766,24 +711,41 @@ nav a:nth-child(3) {
     line-height: 1.71;
     letter-spacing: normal;
     text-align: center;
-    color: #333333;
+    color: #333333;  
+    margin-bottom: 52px; 
 }
 
-/*-----------------------------------------------------------------*/
 
 
-.search-hotels {
-    border: 1px solid  #000000;
+.search-hotels{
+    position: relative;
+}
+
+.filters{
+    position: absolute;
+    top:100%;
+    left: 50%;
+    position: absolute;
+    margin-left: -284px;
+
+    border: 0px solid ;
     width: 568px;
-    height: 86px;
-    margin:0 auto;
-    background-color: #766357;
-    
+    height: 395px;
+    box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
+    background: #ffffff;
+    text-align: center;
 }
 
-.search-hotels h3{
-   
-    font-family: PTSans;
+
+
+.search-link{
+    width: 568px;
+    min-height: 86px;
+    background-color: #766357;
+    margin:0 auto;
+    display:block;
+
+    font-family: PT Sans;
     font-size: 21px;
     font-weight: bold;
     font-style: normal;
@@ -792,35 +754,15 @@ nav a:nth-child(3) {
     letter-spacing: normal;
     text-align: center;
     color: #ffffff;
-    margin: 30px 0px 30px;
-
-}
-
-/*-------------Фрома----------*/
-
-.filters {
-    font: inherit;
-  
-}
-
-.filters{
-    border: 0px solid ;
-    width: 568px;
-    height: 395px;
-    margin:0 auto;
-    position: relative;
+    line-height: 86px;
     
-    box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
-    background: #ffffff
+    
 }
 
+/* Карта */
 
-.filters{
-    width: 568px;
-    height: 481px;
-    
-    margin: 0 auto;
-    padding:0 10px;
+.map{
+    z-index: -1;
 }
 
 /*---------------footer-------------*/
@@ -830,9 +772,9 @@ nav a:nth-child(3) {
     padding:0 10px;
     border: 3px solid green;
     display: flex;
-    height: 120px;
-    display:flex;
-    position: absolute;
+    min-height: 120px;
+    
+    /*position: absolute*/
     transform: translatey(-120px);
     background: #ffffff;
 }
@@ -884,7 +826,7 @@ nav a:nth-child(3) {
 
 
 
-.logo-HtmlAcademy {
+.logo-htmlacademy {
     width: 188px;
     margin:0;
     min-height: 40px;
