@@ -30,14 +30,14 @@
   <!--<div class=" background-photo"><img  src="img/background-photo.jpg" width="100%"  ></div>-->
   <div class="promo">
     <figure class="welcome-svg"><img src="img/welcome.svg"  alt="City of sedona"  ></figure>
-    <figire><img class="photo-polygon" src="img/polygon.png" ></figire>
+  
   </div>
   
-        <div class="featur">   
-          <p>
+        <div class="features">   
+          <h2>
             Седона - не большой городок в Аризоне, 
             заслуживающий большего.
-          </p>
+          </h2>
           <p>
             Расмотрим 5 Причин, по которым седона круче, чем грант каньюн !!!
           </p>
@@ -49,9 +49,9 @@
     <section class="advantages">
       <h2 class="visually-hidden">Преиму́щества</h2>
     
-      <div class="box">
-        <div class="box-2">
-         <div class="box-3">
+      <div class="advantages-item">
+        <div class="advantages-container">
+         <div class="advantages-item-text">
             <h2>
                 Настоящий
                 городок
@@ -61,41 +61,36 @@
               Седона — не аттракцион для туристов, там течёт своя жизнь
             </p>
           </div> 
-            
-        </div>
+        </div class="advantages-item-pic">
            <div><img  src="img/Layer 10.jpg"   aligen="right" ></div> 
         </div>
-      <div class="features-container">
 
-        <ul class="features-container1">
-          <li><img src="img/icon-1.svg"></li>
-          <li>
-            <h2>Жильё</h2>
-            <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-          </li> 
-        </ul>
+      <div class="features-list">
+     
+      <div class="features-item-text">
+          <div><img src="img/icon-1.svg"></div>
+          <div class="features-text">Жильё</div>
+          <div class="features-text-2"> Рекомендуем пожить в настоящем<br> мотеле, всё как в кино!</div> 
+      </div>  
 
-        <ul class="features-food">
-          <li><img src="img/icon-2.svg"></li>
-          <li>
-            <h2>Еда</h2>
-            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p> 
-          </li>
-          </ul>
+        <div class="features-item-text">
+            <div><img src="img/icon-2.svg"></div>
+            <div class="features-text">Еда</div>
+            <div class="features-text-2">Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!</div> 
+        </div>
 
-        <ul class="features-souvenir">
-            <li><img src="img/icon-3.svg"></li>
-          <li>
-            <h2>Сувениры</h2>
-            <p>Не только китайского, но и местного производства!</p>
-          </li>
-        </ul>
+        <div class="features-item-text">
+          <div class="features-img"><img src="img/icon-3.svg"></div>
+          <div class="features-text">Сувениры</div>
+          <div class="features-text-2">Не только китайского, но и местного<br> производства!</div>
+        </div>
+        
       </div>
  
-      <div class="box-1">
+      <div class="advantages-description">
         <div><img src="img/Layer 5.jpg"> </div>
-        <div class="box2">
-          <div class="dox3">
+        <div class="advantages-container">
+          <div class="advantages-description-text">
               <h2>
                   Там есть
                   Мост дьявола
@@ -108,9 +103,9 @@
         </div>        
       </div>
 
-      <div class="square4">
-      <div class="square">
-          <div class="squarea3">
+      <div class="reason">
+      <div class="reason-container">
+          <div class="reason-1">
               <p>
                 Небольшая площадь    
               </p>
@@ -121,8 +116,8 @@
               </p>
         </div>
       </div>
-      <div class="square">
-        <div class="road2">
+      <div class="reason-container">
+        <div class="reason-2">
             <h2>
             Красивая
             дорога
@@ -135,8 +130,8 @@
       </div>
     </div>
 
-    <div class="square">
-        <div class="tourist">
+    <div class="reason-container">
+        <div class="reason-3">
           <h2>
             Мало
             туристов
@@ -151,28 +146,22 @@
     </div>
     </section>
 
-    <!----------------Выбор Гостиниц----------------->
-    <section class="hotels-info">
-
+    <!----------------Выбор Гостиниц-----------------> 
+    <section class="search-hotels">
+    
         <h2 class="visually-hidden">Выбор Гостиниц</h2>
-  
-       <div>
-        <p>Заинтересовались?</p>
+
+        <h3> Заинтересовались? </h3>
         <p>
           Укажите предпологаемые даты поездки, <br>
           и мы покажем вам лучшее предложения гостиницы в седоне.
         </p>
-     
-  
-      </section >
-  
-      <section class="search-hotels">
-      <h3 class="search">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h3>
-      </section>
-  
-      <section class="filters">
-        <!--ФОРМА-->
-        
+      <a href="#" class="search-link">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a> 
+    
+    
+      <div class="filters">
+       <!-- ФОРМА-->
+         
         <form class="filters-search" action="#" method="POST">
           <p>
             <label >
@@ -194,13 +183,15 @@
         </p>
           <button class="button" type="submit" style="width:457px;height:60px">Найти</button>
         </form>
-        
-      </section>
 
+       </div>
+    </section>
 
 
     <!--Карта-->
+    <div class="map">
      <img src="img/map.png" width="100%">
+    </div>
   </main>
 <!--<h3>соцсети</h3>-->
 
@@ -209,11 +200,7 @@
 
 <!---->
   <footer class="footer">
-  
     <p>#VISITSEDONA</p> 
-
-    <div class="social"> 
-      <div class="footer-social">
       <ul>
          <li><a href="#" class="social-bottom">
           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -235,12 +222,11 @@
         <li><a href="#" class="social-bottom"><img src="img/fb-icon.svg" alt="Фейсбук"></a></li>
         <li><a href="#" class="social-bottom"><img src="img/youtube.svg" alt="Ютуб"></a></li>
       </ul>
-    </div>
-    </div>
+    
 
     <div>
       <p>WEBSITE</p>
-      <a class="logo-HtmlAcademy"><img src="img/logo_HtmlAcademy.svg" width="50" height="" alt="HTML Academy"></a>
+      <a class="logo-htmlacademy"><img src="img/logo_HtmlAcademy.svg" width="50" height="" alt="html academy"></a>
     </div>
 
 
