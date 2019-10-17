@@ -285,7 +285,7 @@ body {
     left: 0;
     width: 1200px;
     min-height: 57px;
-    background-image: url(../img/polygon.png);
+    background-image: url(../img/polygon1.svg);
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -389,11 +389,13 @@ img{
     color: #6B6D6B;
 }
 
- .site-navigation {
+.site-navigation {
     display:flex;
     flex-wrap:wrap;
     min-width:1200px;
     list-style-type: none;
+    margin:0;
+    padding:0;
 }
 
 .site-navigation a{
@@ -446,7 +448,7 @@ img{
 .features p{
   width: 500px;
   min-height: 48px;
-  font-family: PTSans;
+  font-family: PT Sans;
   font-size: 21px;
   font-weight: bold;
   font-style: normal;
@@ -460,9 +462,9 @@ img{
 }
 
 .features p:last-child {
-    width: 600px;
-    min-height: 13px;
-    font-family: PTSans;
+    max-width: 600px;
+    
+    font-family: PT Sans;
     font-size: 14px;
     font-weight: normal;
     font-style: normal;
@@ -485,19 +487,20 @@ img{
 
 .advantages-item{
     display: flex;
-
 }
+
+
 
 
 
 .advantages-container{
     
-    width: 400px;
-    min-height: 256px;
+    max-width: 400px;
+    max-height: 256px; 
     background-color: #81b3d2;
     
 }
-/**/
+/*
 .advantages-item-text{
     width: 280px;
     min-height: 146px;
@@ -513,16 +516,40 @@ img{
     padding: 46px 60px 64px 60px;
     
 }
-
-.advantages-item-text h2{
+*/
+.advantages-container h2{
     font-size: 21px;
     font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    /* margin:0 auto; */
+    padding:30px 100px 0 100px;
 }
 
-.advantages-item-text p{
-    font-family: PT Sans;
+.advantages-container p{
+    font-family: PTSans;
     font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
     text-align: center;
+    color: #ffffff;
+    padding: 0 45px 0 45px;
+}
+
+.advantages-container span{
+    color: #ffffff;
+    display:flex;
+    justify-content: space-around;
+    margin-top:20px;
+
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
 }
 
 /*-------------------------*/
@@ -538,43 +565,18 @@ img{
 }
 
 
-/**/
-.advantages-description-text{
-    
-    width: 303px;
-    min-height: 142px;
-    font-family: PT Sans;
-    
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-align: center;
-    color: #ffffff;
-    padding: 49px 49px 65px 49px;
-}
-
-.advantages-description-text h2{
-    font-size: 21px;
-    font-weight: bold;
-}
-
-.advantages-description-text p{
-    font-family: PT Sans;
-    font-size: 14px;
-    text-align: center;
-    color: #ffffff;
-}
-
-
-
 .features-list{
     display: flex;
+    justify-content: space-around;
+    align-items: baseline;
     margin:37px 0px 37px;
-}
+} 
 
-
+.features-list li{
+    display: block;
+    text-align: center;
+   
+} 
 
 .features-item-text {
     width: 400px;
@@ -604,89 +606,53 @@ img{
     margin-bottom: 20px;
 }
 
-
+/* ------------------------- */
+.reason{
+    display:flex;
+    margin:50px 0 60px;
+}
 
 
 .reason-container{
-    width: 400px;
-    min-height: 256px;
-}
-
-
-
-
-.reason-1{
-    width: 208px;
-    height: 143px;
-    font-family: PT Sans;
+    max-width: 400px;
+ 
+    display: block;
+    font-family: PTSans;
     font-size: 14px;
     font-weight: normal;
-    font-style: normal;
     font-stretch: normal;
+    font-style: normal;
     line-height: 1.5;
     letter-spacing: normal;
     text-align: center;
     color: #333333;
-    list-style: none;
-    margin:auto;
-   
+    
+} 
+
+.reason li p{
+    
+    padding: 0 50px 0 50px;  
+    align-items: baseline;   
 }
 
-.reason-1>:nth-child(1){
+
+
+
+
+
+
+
+.reason-container  h2{
     font-size: 21px;
     font-weight: bold;
     color: #000000;
+    padding: 0 100px 0 100px; 
 }
 
 
 
-.reason-2{
-    width: 262px;
-    height: 142px;
-    font-family: PT Sans;
-    font-size: 14px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-align: center;
-    color: #333333;
-    list-style: none;
-    margin: auto;
-}
 
-.reason-2 h2{
-    font-size: 21px;
-    font-weight: bold;
-    color: #000000;
-}
 
-.reason-3{
-    width: 246px;
-    height: 142px;
-    font-family: PT Sans;
-    font-size: 14px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-align: center;
-    color: #333333;
-    list-style: none;
-    margin: auto;
-}
-
-.reason-3 h2{
-    font-size: 21px;
-    font-weight: bold;
-    color: #000000;
-}
-
-.reason{
-    display:flex;
-}
 
 /*-----------------Выбор Гостиниц-------------------*/
 
