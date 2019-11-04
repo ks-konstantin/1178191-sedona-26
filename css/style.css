@@ -266,15 +266,15 @@ input[type="radio"]:disabled + label {
   background-color: #afcadc;
   background-image:
     url("../img/polygon-new.svg"),
-    url("../img/background-photo.jpg"),
+    url("../img/photo-background.jpg"),
     -webkit-gradient(linear, left top, left bottom, color-stop(30%, #e3f0f8), to(#886e65));
   background-image:
     url("../img/polygon-new.svg"),
-    url("../img/background-photo.jpg"),
+    url("../img/photo-background.jpg"),
     -o-linear-gradient(#e3f0f8 30%, #886e65);
   background-image:
     url("../img/polygon-new.svg"),
-    url("../img/background-photo.jpg"),
+    url("../img/photo-background.jpg"),
     linear-gradient(#e3f0f8 30%, #886e65);
   background-position:
     center top,
